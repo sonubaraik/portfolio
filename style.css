@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #eeeff1;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 80px; 
+   padding: 0 50px;
+
+   .heading a{
+        color: #1a1c20;
+        font-size: 22px;
+        text-decoration: none;
+        font-weight: 600;
+   }
+
+   .socialMediaSection a{
+        text-decoration: none;
+        color: #1a1c20;
+        margin: 0 10px;
+        span{
+            margin-left: 5px;
+            
+        }
+   }
+
+   .emailBtn{
+            padding: 5px 15px;
+            border-radius: 5px;
+            color: #eeeff1 !important;
+            background-color: #1a1c20;
+        }
+}

@@ -42,3 +42,43 @@ nav{
             background-color: #1a1c20;
         }
 }
+
+
+/* hero section styling */
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0 100px 0;
+    gap: 40px;
+
+    .content{
+        flex: 5;
+
+        h2{
+            font-size: 45px;
+        }
+
+        .link{
+            margin-top: 25px;
+
+
+            a{
+                padding: 5px 10px;
+                border: 2px solid #4a76ee;
+                border-radius: 5px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                transition: .1s;
+                text-decoration: none;
+                color: #4a76ee;
+            }
+        }
+    }
+
+    .img{
+        width: 350px;
+          
+    }
+}

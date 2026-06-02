@@ -74,11 +74,217 @@ nav{
                 text-decoration: none;
                 color: #4a76ee;
             }
+
+            a:hover{
+                color: #1a1c20;
+                border: 2px solid #1a1c20;
+            }
         }
     }
 
     .img{
         width: 350px;
+        flex: 2;
           
     }
 }
+
+
+/* skills section styling */
+
+.skills-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+
+    h2{
+        text-align: center;
+        font-size: 35px;
+    }
+    p{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .skills-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .skills{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 10px;
+            width: 200px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1.5px solid #d3d3d3;
+
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 2px;
+                
+            }
+            span{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+/* testimony section styling */
+
+.testimony-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+
+    h2{
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .testimony-container{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        .testimony-img-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+                object-fit: cover;
+            }
+
+            p{
+                font-weight: 600;
+            }
+
+            p:last-child{
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+
+/* contact section styling */
+
+.contact-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+
+    h2{
+        font-size: 35px;
+    }
+
+    .contact-container{
+        display: flex;
+        gap: 50px;
+        margin-top: 20px;
+        justify-content: space-evenly;
+
+        .contact-text{
+            flex: 3;
+        }
+
+        form{
+            flex:3;
+            display: flex;
+            flex-direction: column;
+        
+
+        input,textarea{
+            border: 2px solid #4a76ee;
+            background-color: transparent;
+            padding: 10px;
+            margin-bottom: 15px;
+            outline: none; 
+        }
+        button{
+                font-size: 16px;
+                color: #fff;
+                background-color: #4a76ee;
+                border: none;
+                height: 50px;
+                cursor: pointer;
+                transition: .1s;
+            }
+        }
+    }
+}
+
+/* media query */
+@media (max-width:600px){
+    nav{
+        padding: 0 20px;
+
+        .socialMediaSection{
+            a{
+                font-size: 22px;
+                color: #1a1c20;
+                
+
+                span{
+                    display: none;
+                }
+            }
+            .emailBtn{
+                background-color:transparent ;
+                color: #1a1c20 !important;
+                padding: 0 ;
+               
+            }
+        }
+    }
+
+    .hero-section{
+        padding: 0 20px;
+        flex-direction: column-reverse;
+
+        .link{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .skills-section{
+        padding: 0 20px;
+    }
+
+    .testimony-section{
+        padding: 0 20px;
+        h2{
+            text-align: center;
+        }
+
+        .testimony-container{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .contact-section{
+        padding: 0 20px;
+
+        .contact-container{
+            flex-direction: column;
+        }
+    }
+}
+
+@media (min-width:800px){
+    .link{
+        display: flex !important;
+    }
+}
+
